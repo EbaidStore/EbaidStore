@@ -13,7 +13,6 @@
             --shadow-color: rgba(0, 0, 0, 0.3);
             --card-bg: rgba(26, 35, 126, 0.85);
             --new-color: #FF5722;
-            --warning-color: #FF9800;
         }
         
         * {
@@ -118,10 +117,6 @@
             background: linear-gradient(135deg, var(--new-color), #E64A19);
         }
         
-        .button-warning {
-            background: linear-gradient(135deg, var(--warning-color), #F57C00);
-        }
-        
         .button:hover {
             background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
             transform: translateY(-3px);
@@ -130,10 +125,6 @@
         
         .button-new:hover {
             background: linear-gradient(135deg, #E64A19, #BF360C);
-        }
-        
-        .button-warning:hover {
-            background: linear-gradient(135deg, #F57C00, #E65100);
         }
         
         .button i {
@@ -175,14 +166,6 @@
             color: var(--accent-color);
         }
         
-        .version-alert {
-            background: rgba(255, 152, 0, 0.2);
-            border-left: 4px solid var(--warning-color);
-            padding: 15px;
-            margin: 20px 0;
-            border-radius: 4px;
-        }
-
         @keyframes fadeInDown {
             from {
                 opacity: 0;
@@ -222,17 +205,6 @@
         <main>
             <div class="card">
                 <h2 style="margin-bottom: 20px; text-align: center;">Select Your Firmware Version</h2>
-                
-                <!-- تحذير خاص بإصدار 9.00 -->
-                <div class="version-alert">
-                    <strong><i class="fas fa-exclamation-triangle"></i> Important for 9.00 users:</strong>
-                    <p>We now have two versions - choose carefully:</p>
-                    <ul style="text-align: left; margin-top: 10px; padding-left: 20px;">
-                        <li><strong>New Version (No Flash)</strong>: Recommended - No USB needed</li>
-                        <li><strong>Legacy Version</strong>: Only for specific cases requiring USB</li>
-                    </ul>
-                </div>
-                
                 <div class="button-grid">
                     <a href="index672.html" class="button">
                         <i class="fas fa-microchip"></i> 6.72
@@ -244,10 +216,7 @@
                         <i class="fas fa-cog"></i> 7.5X
                     </a>
                     <a href="9nw/index.html" class="button button-new">
-                        <i class="fas fa-star"></i> 9.00 (No Flash)
-                    </a>
-                    <a href="900/index.html" class="button button-warning">
-                        <i class="fas fa-exclamation-triangle"></i> 9.00 (Legacy)
+                        <i class="fas fa-star"></i> 9.00
                     </a>
                 </div>
             </div>
@@ -271,8 +240,8 @@
                     <div class="feature-icon">
                         <i class="fas fa-sync-alt"></i>
                     </div>
-                    <h3>Manual Selection</h3>
-                    <p>You choose the version that fits your needs</p>
+                    <h3>No Flash Required</h3>
+                    <p>Latest 9.00 exploit works without USB flash drive</p>
                 </div>
             </div>
         </main>
@@ -286,7 +255,5 @@
             </p>
         </footer>
     </div>
-
-    <!-- إزالة كود التحديد التلقائي تمامًا -->
 </body>
 </html>
